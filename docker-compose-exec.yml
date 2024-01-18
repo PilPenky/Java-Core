@@ -1,0 +1,6 @@
+services:
+  app:
+    image: Oracle/OpenJDK-21.0.1
+    command: java -classpath ./out/ sample.Main
+    volumes:
+      - ./bin:/app/out
